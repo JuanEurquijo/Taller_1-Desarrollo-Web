@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache,mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+	<meta name="robots" content="index">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="C:\Users\User\Downloads\TallerWeb\script.js"></script>
+    <title>Historia</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-header">
+            <h2 id="nav-title">Videojuegos</h2>
+        </div>
+        <nav class="nav">
+            <ul class="navbar">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="categorias.html" class="nav-link">Categorías</a>
+                </li>
+                <li class="nav-item">
+                    <a href="historia.html" class="nav-link">Historia</a>
+                </li>
+                <li class="nav-item">
+                    <a href="lanzamientos.html" class="nav-link">Lanzamientos</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="history" onmouseover="changeColorEnter()" onmouseleave="changeColorLeave()" >
+        <h2 class="title-section">Historia de los videojuegos</h2>
+        <div class="float-right">
+            <img class="thumbnail-history" src="data:image/jpeg;base64,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">
+            <footer>
+                <div class="container-footer">
+                    <span class="footer-content">
+                        Pac-Man fue una de las máquinas arcade más famosas de los años 80.
+                    </span>
+                </div>
+            </footer>
+        </div>
+        <h3>Los orígenes</h3>
+        <p>La historia de los videojuegos tiene su origen en la década de 1950 cuando, tras el fin de la Segunda Guerra
+            Mundial, las potencias vencedoras de la guerra, construyeron los primeros superordenadores programables. Los
+            primeros intentos por implementar programas de carácter lúdico (inicialmente programas de ajedrez) no
+            tardaron en aparecer, y se fueron repitiendo durante las siguientes décadas. Los primeros videojuegos
+            modernos aparecieron en la década de los 60, y desde entonces el mundo de los videojuegos no ha dejado de
+            crecer y desarrollarse con el único límite que le ha impuesto la creatividad de los desarrolladores y la
+            evolución tecnológica. En los últimos años, se asiste a una era de progreso tecnológico dominada por una
+            industria que promueve un modelo de consumo rápido donde las nuevas superproducciones quedan obsoletas en
+            pocos meses, pero donde a la vez un grupo de personas e instituciones conscientes del papel que los
+            programas pioneros, las compañías que definieron el mercado y los grandes visionarios tuvieron en el
+            desarrollo de dicha industria han iniciado el estudio formal de la historia de los videojuegos.​</p>
+        <h3>Indice</h3>
+        <ol class="ind">
+            <li><a href="#indice1">Antes de la década de 1970</a>
+                <ol>
+                    <li>Consolas Primitivas</li>
+                    <li>Tennis for Two</li>
+                    <li>Spacewar</li>
+                    <li>La "Brown Box" de Ralph Baer</li>
+                </ol>
+            </li>
+            <li><a href="#indice2">Década de 1970 </a>
+                <ol>
+                    <li>Galaxy Game, la primera máquina arcade de la histori</li>
+                    <li>Computer Space, los inicios de Atari</li>
+                    <li>Magnavox Odyssey, la primera videoconsola de la historia</li>
+                </ol>
+            </li>
+            <li><a href="#indice3">Década de 1980</a>
+                <ol>
+                    <li>La edad de oro de los videojuegos (1978-1983)</li>
+                    <li>La era de los 8 bits</li>
+                    <li>Los gigantes japoneses</li>
+                </ol>
+            </li>
+        </ol>
+
+        <section class="sub-section">
+            <h3>Recorrido en el tiempo</h3>
+            <ul>
+                <li id="indice1" class="time-item">Antes de la década de 1970</li>
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha
+                    sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T.
+                    persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
+                    manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien
+                    ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+                    Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de
+                    Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el
+                    cual incluye versiones de Lorem Ipsum.</p>
+                <ul>
+                    <li class="time-item">Consolas Primitivas</li>
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                        ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                        de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
+                        que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                        cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
+                        por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+                    <li class="time-item">Tennis for Two</li>
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                        ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                        de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
+                        que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                        cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
+                        por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+
+                    </p>
+                    <li class="time-item">Spacewar</li>
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                        ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                        de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
+                        que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                        cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
+                        por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                    </p>
+                    <li class="time-item">La "Brown Box" de Ralph Bear</li>
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                        ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                        de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
+                        que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                        cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
+                        por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+
+                    </p>
+                </ul>
+            </section>
+            <section class="sub-section">
+                <li id="indice2" class="time-item">Década de 1970</li>
+                <ul>
+                    <li class="time-item">Galaxy Game, la primera máquina arcade de la historia</li>
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                        ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                        de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
+                        que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                        cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
+                        por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                    </p>
+                    <li class="time-item">Computer Space, los inicios de Atari</li>
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                        ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                        de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
+                        que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                        cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
+                        por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                    </p>
+                    <li class="time-item">Magnavox Odyssey, la primera videoconsola de la historia</li>
+                    <p>
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                        ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                        de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
+                        que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                        cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
+                        por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                    </p>
+                </ul>
+            </section>
+            <section class="sub-section">
+                <li id="indice3" class="time-item">Década de 1980</li>
+                    <ul>
+                      <li class="time-item">La edad de oro de los videojuegos (1978-1983)</li>
+                      <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                        ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                        de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
+                        que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                        cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
+                        por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                        
+                      </p>
+                      <li class="time-item">La era de los 8 bits</li>
+                      <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                        ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                        de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
+                        que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                        cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
+                        por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+
+                      </p>
+                      <li class="time-item">Los gigantes japoneses</li>
+                      <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                        ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                        de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
+                        que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                        cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
+                        por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+
+                      </p>
+                    </ul>
+            </ul>
+        </section>
+    </section>
+
+</body>
+
+</html>
